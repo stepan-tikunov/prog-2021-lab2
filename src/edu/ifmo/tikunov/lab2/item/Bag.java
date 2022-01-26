@@ -3,7 +3,7 @@ package edu.ifmo.tikunov.lab2.item;
 import edu.ifmo.tikunov.lab2.creature.*;
 import edu.ifmo.tikunov.lab2.location.*;
 
-public class Hat implements Item {
+public class Bag implements Item {
 	private String description;
 	private Location location;
 	private Creature owner;
@@ -47,8 +47,8 @@ public class Hat implements Item {
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
-		if (o instanceof Hat) {
-			Hat hat = (Hat)o;
+		if (o instanceof Bag) {
+			Bag hat = (Bag)o;
 			return description.equals(hat.description) &&
 				location.equals(hat.location) &&
 				owner.equals(hat.owner);
@@ -56,11 +56,11 @@ public class Hat implements Item {
 		return false;
 	}
 
-	public Hat() {
+	public Bag() {
 		this("the hat", null, null);
 	}
 
-	public Hat(String description, Location location, Creature owner) {
+	public Bag(String description, Location location, Creature owner) {
 		this.description = description;
 		location.put(this);
 		owner.getItem(this);

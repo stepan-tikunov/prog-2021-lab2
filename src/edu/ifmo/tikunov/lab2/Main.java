@@ -35,12 +35,12 @@ public class Main {
 		Resident sasha = new Resident("Sasha from the coast", coast);
 
 		MummyMama mummyMama = new MummyMama("Mummy Mama", woods);
-		Hat hat = new Hat("hat", valley, mummyMama);
-		valley.put(hat);
+		Bag bag = new Bag("bag", valley, mummyMama);
+		valley.put(bag);
 
-		System.out.println("When Mummy Mama was in " + hat.getLocation().toString() + ", she lost her hat and now she doesn't know where to find it.");
+		System.out.println("When Mummy Mama was in " + bag.getLocation().toString() + ", she lost her bag and now she doesn't know where to find it.");
 
-		SearchAnnouncementWithFeast announcement = new SearchAnnouncementWithFeast(mummyMama, hat);
+		SearchAnnouncementWithFeast announcement = new SearchAnnouncementWithFeast(mummyMama, bag);
 
 		announcement.startSearch(valley);
 	}
