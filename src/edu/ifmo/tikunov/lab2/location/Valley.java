@@ -7,7 +7,7 @@ import edu.ifmo.tikunov.lab2.creature.*;
 
 public class Valley implements Location {
 	protected ArrayList<Place> places;
-	
+
 	@Override
 	public void put(Creature... residents) {
 		for (Creature resident : residents) {

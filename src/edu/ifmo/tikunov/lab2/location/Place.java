@@ -57,7 +57,7 @@ public class Place implements Location {
 				participants.add(resident);
 			}
 		}
-		
+
 		if (!item.getLocation().equals(this)) {
 			System.out.println("Unfortunately, the " + item.toString() + " wasn't in " + toString() + ".");
 			return null;

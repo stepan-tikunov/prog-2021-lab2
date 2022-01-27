@@ -13,5 +13,4 @@ public class SearchAnnouncementWithFeast extends SearchAnnouncement {
 	public SearchAnnouncementWithFeast(Creature loser, Item lostItem) {
 		super(loser, lostItem);
 	}
-	
 }
